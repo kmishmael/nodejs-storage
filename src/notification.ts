@@ -105,7 +105,7 @@ export interface DeleteNotificationCallback {
  * {@link Bucket#notification}. Use it to interact with Cloud Pub/Sub
  * notifications.
  *
- * See {@link https://cloud.google.com/storage/docs/pubsub-notifications| Cloud Pub/Sub Notifications for Google Cloud Storage}
+ * See {@link https://cloud.google.com/storage/docs/pubsub-notifications | Cloud Pub/Sub Notifications for Google Cloud Storage}
  *
  * @class
  * @hideconstructor
@@ -128,7 +128,7 @@ class Notification extends ServiceObject {
       /**
        * Creates a notification subscription for the bucket.
        *
-       * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/insert| Notifications: insert}
+       * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/insert | Notifications: insert}
        * @method Notification#create
        *
        * @param {Topic|string} topic The Cloud PubSub topic to which this
@@ -227,7 +227,7 @@ class Notification extends ServiceObject {
   /**
    * Permanently deletes a notification subscription.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/delete| Notifications: delete API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/delete | Notifications: delete API Documentation}
    *
    * @param {object} [options] Configuration options.
    * @param {string} [options.userProject] The ID of the project which will be
@@ -280,7 +280,7 @@ class Notification extends ServiceObject {
   /**
    * Get a notification and its metadata if it exists.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/get| Notifications: get API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/get | Notifications: get API Documentation}
    *
    * @param {object} [options] Configuration options.
    *     See {@link Bucket#createNotification} for create options.
@@ -376,7 +376,7 @@ class Notification extends ServiceObject {
   /**
    * Get the notification's metadata.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/get| Notifications: get API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/get | Notifications: get API Documentation}
    *
    * @param {object} [options] Configuration options.
    * @param {string} [options.userProject] The ID of the project which will be

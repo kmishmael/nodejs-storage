@@ -474,9 +474,9 @@ export enum BucketExceptionMessages {
  * @name Bucket#iam
  * @mixes Iam
  *
- * See {@link https://cloud.google.com/storage/docs/access-control/iam#short_title_iam_management| Cloud Storage IAM Management}
- * See {@link https://cloud.google.com/iam/docs/granting-changing-revoking-access| Granting, Changing, and Revoking Access}
- * See {@link https://cloud.google.com/iam/docs/understanding-roles| IAM Roles}
+ * See {@link https://cloud.google.com/storage/docs/access-control/iam#short_title_iam_management | Cloud Storage IAM Management}
+ * See {@link https://cloud.google.com/iam/docs/granting-changing-revoking-access | Granting, Changing, and Revoking Access}
+ * See {@link https://cloud.google.com/iam/docs/understanding-roles | IAM Roles}
  *
  * @example
  * ```
@@ -527,19 +527,19 @@ export enum BucketExceptionMessages {
  * the ACLs defined on your bucket, as well as set, update, and delete them.
  *
  * Buckets also have
- * {@link https://cloud.google.com/storage/docs/access-control/lists#default| default ACLs}
+ * {@link https://cloud.google.com/storage/docs/access-control/lists#default | default ACLs}
  * for all created files. Default ACLs specify permissions that all new
  * objects added to the bucket will inherit by default. You can add, delete,
  * get, and update entities and permissions for these as well with
  * {@link Bucket#acl.default}.
  *
- * See {@link http://goo.gl/6qBBPO| About Access Control Lists}
- * See {@link https://cloud.google.com/storage/docs/access-control/lists#default| Default ACLs}
+ * See {@link http://goo.gl/6qBBPO | About Access Control Lists}
+ * See {@link https://cloud.google.com/storage/docs/access-control/lists#default | Default ACLs}
  *
  * @name Bucket#acl
  * @mixes Acl
  * @property {Acl} default Cloud Storage Buckets have
- * {@link https://cloud.google.com/storage/docs/access-control/lists#default| default ACLs}
+ * {@link https://cloud.google.com/storage/docs/access-control/lists#default | default ACLs}
  * for all created files. You can add, delete, get, and update entities and
  * permissions for these as well. The method signatures and examples are all
  * the same, after only prefixing the method call with `default`.
@@ -803,7 +803,7 @@ class Bucket extends ServiceObject {
       /**
        * Delete the bucket.
        *
-       * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/delete| Buckets: delete API Documentation}
+       * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/delete | Buckets: delete API Documentation}
        *
        * @method Bucket#delete
        * @param {DeleteBucketOptions} [options] Configuration options.
@@ -963,7 +963,7 @@ class Bucket extends ServiceObject {
        *
        * To set metadata, see {@link Bucket#setMetadata}.
        *
-       * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/get| Buckets: get API Documentation}
+       * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/get | Buckets: get API Documentation}
        *
        * @method Bucket#getMetadata
        * @param {GetBucketMetadataOptions} [options] Configuration options.
@@ -1015,7 +1015,7 @@ class Bucket extends ServiceObject {
       /**
        * Set the bucket's metadata.
        *
-       * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/patch| Buckets: patch API Documentation}
+       * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/patch | Buckets: patch API Documentation}
        *
        * @method Bucket#setMetadata
        * @param {object<string, *>} metadata The metadata you wish to set.
@@ -1191,8 +1191,8 @@ class Bucket extends ServiceObject {
    * function multiple times asynchronously does not guarantee that all rules
    * are added correctly.
    *
-   * See {@link https://cloud.google.com/storage/docs/lifecycle| Object Lifecycle Management}
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/patch| Buckets: patch API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/lifecycle | Object Lifecycle Management}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/patch | Buckets: patch API Documentation}
    *
    * @param {LifecycleRule|LifecycleRule[]} rule The new lifecycle rule or rules to be added to objects
    *     in this bucket.
@@ -1453,7 +1453,7 @@ class Bucket extends ServiceObject {
   /**
    * Combine multiple files into one new file.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/compose| Objects: compose API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/compose | Objects: compose API Documentation}
    *
    * @throws {Error} if a non-array is provided as sources argument.
    * @throws {Error} if no sources are provided.
@@ -1616,7 +1616,7 @@ class Bucket extends ServiceObject {
     callback: CreateChannelCallback
   ): void;
   /**
-   * See a {@link https://cloud.google.com/storage/docs/json_api/v1/objects/watchAll| Objects: watchAll request body}.
+   * See a {@link https://cloud.google.com/storage/docs/json_api/v1/objects/watchAll | Objects: watchAll request body}.
    *
    * @typedef {object} CreateChannelConfig
    * @property {string} address The address where notifications are
@@ -1656,7 +1656,7 @@ class Bucket extends ServiceObject {
    * @throws {Error} If an ID is not provided.
    * @throws {Error} If an address is not provided.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/watchAll| Objects: watchAll API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/watchAll | Objects: watchAll API Documentation}
    *
    * @param {string} id The ID of the channel to create.
    * @param {CreateChannelConfig} config Configuration for creating channel.
@@ -1801,7 +1801,7 @@ class Bucket extends ServiceObject {
   /**
    * Creates a notification subscription for the bucket.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/insert| Notifications: insert}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/insert | Notifications: insert}
    *
    * @param {Topic|string} topic The Cloud PubSub topic to which this
    * subscription publishes. If the project ID is omitted, the current
@@ -1967,7 +1967,7 @@ class Bucket extends ServiceObject {
    * The `query` object passed as the first argument will also be passed to
    * {@link Bucket#getFiles}.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/delete| Objects: delete API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/delete | Objects: delete API Documentation}
    *
    * @param {DeleteFilesOptions} [query] Query object. See {@link Bucket#getFiles}
    * @param {boolean} [query.force] Suppress errors until all files have been
@@ -2469,7 +2469,7 @@ class Bucket extends ServiceObject {
    * @param {string|number} [options.generation] Only use a specific revision of
    *     this file.
    * @param {string} [options.encryptionKey] A custom encryption key. See
-   *     {@link https://cloud.google.com/storage/docs/encryption#customer-supplied| Customer-supplied Encryption Keys}.
+   *     {@link https://cloud.google.com/storage/docs/encryption#customer-supplied | Customer-supplied Encryption Keys}.
    * @param {string} [options.kmsKeyName] The name of the Cloud KMS key that will
    *     be used to encrypt the object. Must be in the format:
    *     `projects/my-project/locations/location/keyRings/my-kr/cryptoKeys/my-key`.
@@ -2551,7 +2551,7 @@ class Bucket extends ServiceObject {
   /**
    * Get {@link File} objects for the files currently in the bucket.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/list| Objects: list API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/list | Objects: list API Documentation}
    *
    * @param {GetFilesOptions} [query] Query object for listing files.
    * @param {boolean} [query.autoPaginate=true] Have pagination handled
@@ -2841,7 +2841,7 @@ class Bucket extends ServiceObject {
   /**
    * Retrieves a list of notification subscriptions for a given bucket.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/list| Notifications: list}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/notifications/list | Notifications: list}
    *
    * @param {GetNotificationsOptions} [options] Configuration options.
    * @param {string} [options.userProject] The ID of the project which will be
@@ -2940,7 +2940,7 @@ class Bucket extends ServiceObject {
    *     See [reference]{@link https://cloud.google.com/storage/docs/access-control/signed-urls#example}
    * @property {object} [extensionHeaders] If these headers are used, the
    * server will check to make sure that the client provides matching
-   * values. See {@link https://cloud.google.com/storage/docs/access-control/signed-urls#about-canonical-extension-headers| Canonical extension headers}
+   * values. See {@link https://cloud.google.com/storage/docs/access-control/signed-urls#about-canonical-extension-headers | Canonical extension headers}
    * for the requirements of this feature, most notably:
    * - The header name must be prefixed with `x-goog-`
    * - The header name must be all lowercase
@@ -2959,13 +2959,13 @@ class Bucket extends ServiceObject {
    * In Google Cloud Platform environments, such as Cloud Functions and App
    * Engine, you usually don't provide a `keyFilename` or `credentials` during
    * instantiation. In those environments, we call the
-   * {@link https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob| signBlob API}
+   * {@link https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob | signBlob API}
    * to create a signed URL. That API requires either the
    * `https://www.googleapis.com/auth/iam` or
    * `https://www.googleapis.com/auth/cloud-platform` scope, so be sure they are
    * enabled.
    *
-   * See {@link https://cloud.google.com/storage/docs/access-control/signed-urls| Signed URLs Reference}
+   * See {@link https://cloud.google.com/storage/docs/access-control/signed-urls | Signed URLs Reference}
    *
    * @throws {Error} if an expiration timestamp from the past is given.
    *
@@ -2987,7 +2987,7 @@ class Bucket extends ServiceObject {
    *     See [reference]{@link https://cloud.google.com/storage/docs/access-control/signed-urls#example}
    * @param {object} [config.extensionHeaders] If these headers are used, the
    * server will check to make sure that the client provides matching
-   * values. See {@link https://cloud.google.com/storage/docs/access-control/signed-urls#about-canonical-extension-headers| Canonical extension headers}
+   * values. See {@link https://cloud.google.com/storage/docs/access-control/signed-urls#about-canonical-extension-headers | Canonical extension headers}
    * for the requirements of this feature, most notably:
    * - The header name must be prefixed with `x-goog-`
    * - The header name must be all lowercase
@@ -3165,7 +3165,7 @@ class Bucket extends ServiceObject {
    * NOTE: This may cause the process to be long-running and use a high number
    * of requests. Use with caution.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/patch| Buckets: patch API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/patch | Buckets: patch API Documentation}
    *
    * @param {MakeBucketPrivateOptions} [options] Configuration options.
    * @param {boolean} [options.includeFiles=false] Make each file in the bucket
@@ -3330,7 +3330,7 @@ class Bucket extends ServiceObject {
    * NOTE: This may cause the process to be long-running and use a high number
    * of requests. Use with caution.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/patch| Buckets: patch API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/patch | Buckets: patch API Documentation}
    *
    * @param {MakeBucketPublicOptions} [options] Configuration options.
    * @param {boolean} [options.includeFiles=false] Make each file in the bucket
@@ -3807,7 +3807,7 @@ class Bucket extends ServiceObject {
   /**
    * Set the default storage class for new files in this bucket.
    *
-   * See {@link https://cloud.google.com/storage/docs/storage-classes| Storage Classes}
+   * See {@link https://cloud.google.com/storage/docs/storage-classes | Storage Classes}
    *
    * @param {string} storageClass The new storage class. (`standard`,
    *     `nearline`, `coldline`, or `archive`).
@@ -3919,14 +3919,14 @@ class Bucket extends ServiceObject {
    * object's name. Lastly, when this argument is omitted, the file is uploaded
    * to your bucket using the name of the local file.
    * @property {string} [encryptionKey] A custom encryption key. See
-   *     {@link https://cloud.google.com/storage/docs/encryption#customer-supplied| Customer-supplied Encryption Keys}.
+   *     {@link https://cloud.google.com/storage/docs/encryption#customer-supplied | Customer-supplied Encryption Keys}.
    * @property {boolean} [gzip] Automatically gzip the file. This will set
    *     `options.metadata.contentEncoding` to `gzip`.
    * @property {string} [kmsKeyName] The name of the Cloud KMS key that will
    *     be used to encrypt the object. Must be in the format:
    *     `projects/my-project/locations/location/keyRings/my-kr/cryptoKeys/my-key`.
    * @property {object} [metadata] See an
-   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert#request_properties_JSON| Objects: insert request body}.
+   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert#request_properties_JSON | Objects: insert request body}.
    * @property {string} [offset] The starting byte of the upload stream, for
    *     resuming an interrupted upload. Defaults to 0.
    * @property {string} [predefinedAcl] Apply a predefined set of access
@@ -3985,8 +3985,8 @@ class Bucket extends ServiceObject {
    *
    * Resumable uploads are enabled by default
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/upload#uploads| Upload Options (Simple or Resumable)}
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert| Objects: insert API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/upload#uploads | Upload Options (Simple or Resumable)}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert | Objects: insert API Documentation}
    *
    * @param {string} pathString The fully qualified path to the file you
    *     wish to upload to your bucket.
@@ -3998,14 +3998,14 @@ class Bucket extends ServiceObject {
    * object's name. Lastly, when this argument is omitted, the file is uploaded
    * to your bucket using the name of the local file.
    * @param {string} [options.encryptionKey] A custom encryption key. See
-   *     {@link https://cloud.google.com/storage/docs/encryption#customer-supplied| Customer-supplied Encryption Keys}.
+   *     {@link https://cloud.google.com/storage/docs/encryption#customer-supplied | Customer-supplied Encryption Keys}.
    * @param {boolean} [options.gzip] Automatically gzip the file. This will set
    *     `options.metadata.contentEncoding` to `gzip`.
    * @param {string} [options.kmsKeyName] The name of the Cloud KMS key that will
    *     be used to encrypt the object. Must be in the format:
    *     `projects/my-project/locations/location/keyRings/my-kr/cryptoKeys/my-key`.
    * @param {object} [options.metadata] See an
-   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert#request_properties_JSON| Objects: insert request body}.
+   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert#request_properties_JSON | Objects: insert request body}.
    * @param {string} [options.offset] The starting byte of the upload stream, for
    *     resuming an interrupted upload. Defaults to 0.
    * @param {string} [options.predefinedAcl] Apply a predefined set of access

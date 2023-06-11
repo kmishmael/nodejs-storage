@@ -462,7 +462,7 @@ class File extends ServiceObject<File> {
    * The `acl` object on a File instance provides methods to get you a list of
    * the ACLs defined on your bucket, as well as set, update, and delete them.
    *
-   * See {@link http://goo.gl/6qBBPO| About Access Control lists}
+   * See {@link http://goo.gl/6qBBPO | About Access Control lists}
    *
    * @name File#acl
    * @mixes Acl
@@ -638,7 +638,7 @@ class File extends ServiceObject<File> {
       /**
        * Delete the file.
        *
-       * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/delete| Objects: delete API Documentation}
+       * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/delete | Objects: delete API Documentation}
        *
        * @method File#delete
        * @param {object} [options] Configuration options.
@@ -778,7 +778,7 @@ class File extends ServiceObject<File> {
       /**
        * Get the file's metadata.
        *
-       * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/get| Objects: get API Documentation}
+       * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/get | Objects: get API Documentation}
        *
        * @method File#getMetadata
        * @param {object} [options] Configuration options.
@@ -835,12 +835,12 @@ class File extends ServiceObject<File> {
        *
        * You can set custom key/value pairs in the metadata key of the given
        * object, however the other properties outside of this object must adhere
-       * to the {@link https://goo.gl/BOnnCK| official API documentation}.
+       * to the {@link https://goo.gl/BOnnCK | official API documentation}.
        *
        *
        * See the examples below for more information.
        *
-       * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/patch| Objects: patch API Documentation}
+       * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/patch | Objects: patch API Documentation}
        *
        * @method File#setMetadata
        * @param {object} [metadata] The metadata you wish to update.
@@ -1022,7 +1022,7 @@ class File extends ServiceObject<File> {
    */
   /**
    * @typedef {object} CopyOptions Configuration options for File#copy(). See an
-   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects#resource| Object resource}.
+   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects#resource | Object resource}.
    * @property {string} [cacheControl] The cacheControl setting for the new file.
    * @property {string} [contentEncoding] The contentEncoding setting for the new file.
    * @property {string} [contentType] The contentType setting for the new file.
@@ -1044,7 +1044,7 @@ class File extends ServiceObject<File> {
    * a Bucket or File object or a URL starting with "gs://".
    * The generation of the file will not be preserved.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/rewrite| Objects: rewrite API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/rewrite | Objects: rewrite API Documentation}
    *
    * @throws {Error} If the destination file is not provided.
    *
@@ -1606,13 +1606,13 @@ class File extends ServiceObject<File> {
    *     billed for the request.
    * @property {string} [chunkSize] Create a separate request per chunk. This
    *     value is in bytes and should be a multiple of 256 KiB (2^18).
-   *     {@link https://cloud.google.com/storage/docs/performing-resumable-uploads#chunked-upload| We recommend using at least 8 MiB for the chunk size.}
+   *     {@link https://cloud.google.com/storage/docs/performing-resumable-uploads#chunked-upload | We recommend using at least 8 MiB for the chunk size.}
    */
   /**
    * Create a unique resumable upload session URI. This is the first step when
    * performing a resumable upload.
    *
-   * See the {@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/resumable-upload| Resumable upload guide}
+   * See the {@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/resumable-upload | Resumable upload guide}
    * for more on how the entire process works.
    *
    * <h4>Note</h4>
@@ -1621,7 +1621,7 @@ class File extends ServiceObject<File> {
    * about any of the details, see {@link File#createWriteStream}. Resumable
    * uploads are performed by default.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/resumable-upload| Resumable upload guide}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/resumable-upload | Resumable upload guide}
    *
    * @param {CreateResumableUploadOptions} [options] Configuration options.
    * @param {CreateResumableUploadCallback} [callback] Callback function.
@@ -1709,7 +1709,7 @@ class File extends ServiceObject<File> {
    * should be gzipped. This will set `options.metadata.contentEncoding` to
    * `gzip` if necessary.
    * @property {object} [metadata] See the examples below or
-   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert#request_properties_JSON| Objects: insert request body}
+   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert#request_properties_JSON | Objects: insert request body}
    *     for more details.
    * @property {number} [offset] The starting byte of the upload stream, for
    *     resuming an interrupted upload. Defaults to 0.
@@ -1779,8 +1779,8 @@ class File extends ServiceObject<File> {
    * NOTE: Writable streams will emit the `finish` event when the file is fully
    * uploaded.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/upload| Upload Options (Simple or Resumable)}
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert| Objects: insert API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/how-tos/upload | Upload Options (Simple or Resumable)}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/insert | Objects: insert API Documentation}
    *
    * @param {CreateWriteStreamOptions} [options] Configuration options.
    * @returns {WritableStream}
@@ -2127,7 +2127,7 @@ class File extends ServiceObject<File> {
   /**
    * The Storage API allows you to use a custom key for server-side encryption.
    *
-   * See {@link https://cloud.google.com/storage/docs/encryption#customer-supplied| Customer-supplied Encryption Keys}
+   * See {@link https://cloud.google.com/storage/docs/encryption#customer-supplied | Customer-supplied Encryption Keys}
    *
    * @param {string|buffer} encryptionKey An AES-256 encryption key.
    * @returns {File}
@@ -2279,13 +2279,13 @@ class File extends ServiceObject<File> {
    * In Google Cloud Platform environments, such as Cloud Functions and App
    * Engine, you usually don't provide a `keyFilename` or `credentials` during
    * instantiation. In those environments, we call the
-   * {@link https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob| signBlob API}
+   * {@link https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob | signBlob API}
    * to create a signed policy. That API requires either the
    * `https://www.googleapis.com/auth/iam` or
    * `https://www.googleapis.com/auth/cloud-platform` scope, so be sure they are
    * enabled.
    *
-   * See {@link https://cloud.google.com/storage/docs/xml-api/post-object-v2| POST Object with the V2 signing process}
+   * See {@link https://cloud.google.com/storage/docs/xml-api/post-object-v2 | POST Object with the V2 signing process}
    *
    * @throws {Error} If an expiration timestamp from the past is given.
    * @throws {Error} If options.equals has an array with less or more than two
@@ -2489,13 +2489,13 @@ class File extends ServiceObject<File> {
    * In Google Cloud Platform environments, such as Cloud Functions and App
    * Engine, you usually don't provide a `keyFilename` or `credentials` during
    * instantiation. In those environments, we call the
-   * {@link https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob| signBlob API}
+   * {@link https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob | signBlob API}
    * to create a signed policy. That API requires either the
    * `https://www.googleapis.com/auth/iam` or
    * `https://www.googleapis.com/auth/cloud-platform` scope, so be sure they are
    * enabled.
    *
-   * See {@link https://cloud.google.com/storage/docs/xml-api/post-object#policydocument| Policy Document Reference}
+   * See {@link https://cloud.google.com/storage/docs/xml-api/post-object#policydocument | Policy Document Reference}
    *
    * @param {object} options Configuration options.
    * @param {Date|number|string} options.expires - A timestamp when this policy will expire. Any
@@ -2670,13 +2670,13 @@ class File extends ServiceObject<File> {
    * In Google Cloud Platform environments, such as Cloud Functions and App
    * Engine, you usually don't provide a `keyFilename` or `credentials` during
    * instantiation. In those environments, we call the
-   * {@link https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob| signBlob API}
+   * {@link https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob | signBlob API}
    * to create a signed URL. That API requires either the
    * `https://www.googleapis.com/auth/iam` or
    * `https://www.googleapis.com/auth/cloud-platform` scope, so be sure they are
    * enabled.
    *
-   * See {@link https://cloud.google.com/storage/docs/access-control/signed-urls| Signed URLs Reference}
+   * See {@link https://cloud.google.com/storage/docs/access-control/signed-urls | Signed URLs Reference}
    *
    * @throws {Error} if an expiration timestamp from the past is given.
    *
@@ -2709,7 +2709,7 @@ class File extends ServiceObject<File> {
    *     for this HTTP header in its request.
    * @param {object} [config.extensionHeaders] If these headers are used, the
    * server will check to make sure that the client provides matching
-   * values. See {@link https://cloud.google.com/storage/docs/access-control/signed-urls#about-canonical-extension-headers| Canonical extension headers}
+   * values. See {@link https://cloud.google.com/storage/docs/access-control/signed-urls#about-canonical-extension-headers | Canonical extension headers}
    * for the requirements of this feature, most notably:
    * - The header name must be prefixed with `x-goog-`
    * - The header name must be all lowercase
@@ -2725,7 +2725,7 @@ class File extends ServiceObject<File> {
    *     save the file as when the signed url is accessed. This is ignored if
    *     `config.responseDisposition` is set.
    * @param {string} [config.responseDisposition] The
-   *     {@link http://goo.gl/yMWxQV| response-content-disposition parameter} of the
+   *     {@link http://goo.gl/yMWxQV | response-content-disposition parameter} of the
    *     signed url.
    * @param {*} [config.accessibleAt=Date.now()] A timestamp when this link became usable. Any value
    *     given is passed to `new Date()`.
@@ -3010,7 +3010,7 @@ class File extends ServiceObject<File> {
    * Make a file private to the project and remove all other permissions.
    * Set `options.strict` to true to make the file private to only the owner.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/patch| Objects: patch API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/patch | Objects: patch API Documentation}
    *
    * @param {MakeFilePrivateOptions} [options] Configuration options.
    * @param {MakeFilePrivateCallback} [callback] Callback function.
@@ -3088,7 +3088,7 @@ class File extends ServiceObject<File> {
   /**
    * Set a file to be publicly readable and maintain all previous permissions.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls/insert| ObjectAccessControls: insert API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls/insert | ObjectAccessControls: insert API Documentation}
    *
    * @param {MakeFilePublicCallback} [callback] Callback function.
    * @returns {Promise<MakeFilePublicResponse>}
@@ -3176,7 +3176,7 @@ class File extends ServiceObject<File> {
    */
   /**
    * @typedef {object} MoveOptions Configuration options for File#move(). See an
-   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects#resource| Object resource}.
+   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects#resource | Object resource}.
    * @param {string} [userProject] The ID of the project which will be
    *     billed for the request.
    */
@@ -3195,7 +3195,7 @@ class File extends ServiceObject<File> {
    * duplicate file lingering. The error message will indicate what operation
    * has failed.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/copy| Objects: copy API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/objects/copy | Objects: copy API Documentation}
    *
    * @throws {Error} If the destination file is not provided.
    *
@@ -3353,7 +3353,7 @@ class File extends ServiceObject<File> {
    */
   /**
    * @typedef {object} RenameOptions Configuration options for File#move(). See an
-   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects#resource| Object resource}.
+   *     {@link https://cloud.google.com/storage/docs/json_api/v1/objects#resource | Object resource}.
    * @param {string} [userProject] The ID of the project which will be
    *     billed for the request.
    */
@@ -3489,7 +3489,7 @@ class File extends ServiceObject<File> {
    * This method allows you to update the encryption key associated with this
    * file.
    *
-   * See {@link https://cloud.google.com/storage/docs/encryption#customer-supplied| Customer-supplied Encryption Keys}
+   * See {@link https://cloud.google.com/storage/docs/encryption#customer-supplied | Customer-supplied Encryption Keys}
    *
    * @param {RotateEncryptionKeyOptions} [options] - Configuration options.
    * @param {RotateEncryptionKeyCallback} [callback]
@@ -3719,8 +3719,8 @@ class File extends ServiceObject<File> {
   /**
    * Set the storage class for this file.
    *
-   * See {@link https://cloud.google.com/storage/docs/per-object-storage-class| Per-Object Storage Class}
-   * See {@link https://cloud.google.com/storage/docs/storage-classes| Storage Classes}
+   * See {@link https://cloud.google.com/storage/docs/per-object-storage-class | Per-Object Storage Class}
+   * See {@link https://cloud.google.com/storage/docs/storage-classes | Storage Classes}
    *
    * @param {string} storageClass The new storage class. (`standard`,
    *     `nearline`, `coldline`, or `archive`)

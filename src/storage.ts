@@ -321,7 +321,7 @@ export const RETRYABLE_ERR_FN_DEFAULT = function (err?: ApiError) {
  *   - `gcs.acl.READER_ROLE` - ("READER")
  *   - `gcs.acl.WRITER_ROLE` - ("WRITER")
  *
- * See {@link https://cloud.google.com/storage/docs/access-control/lists| About Access Control Lists}
+ * See {@link https://cloud.google.com/storage/docs/access-control/lists | About Access Control Lists}
  *
  * @name Storage#acl
  * @type {object}
@@ -434,10 +434,10 @@ export const RETRYABLE_ERR_FN_DEFAULT = function (err?: ApiError) {
  * and allow other users to access your buckets and files.
  *
  * To learn more about ACLs, read this overview on
- * {@link https://cloud.google.com/storage/docs/access-control| Access Control}.
+ * {@link https://cloud.google.com/storage/docs/access-control | Access Control}.
  *
- * See {@link https://cloud.google.com/storage/docs/overview| Cloud Storage overview}
- * See {@link https://cloud.google.com/storage/docs/access-control| Access Control}
+ * See {@link https://cloud.google.com/storage/docs/overview | Cloud Storage overview}
+ * See {@link https://cloud.google.com/storage/docs/access-control | Access Control}
  *
  * @class
  */
@@ -854,12 +854,12 @@ export class Storage extends Service {
    * @property {boolean} [coldline=false] Specify the storage class as Coldline.
    * @property {Cors[]} [cors=[]] Specify the CORS configuration to use.
    * @property {CustomPlacementConfig} [customPlacementConfig={}] Specify the bucket's regions for dual-region buckets.
-   *     For more information, see {@link https://cloud.google.com/storage/docs/locations| Bucket Locations}.
+   *     For more information, see {@link https://cloud.google.com/storage/docs/locations | Bucket Locations}.
    * @property {boolean} [dra=false] Specify the storage class as Durable Reduced
    *     Availability.
    * @property {string} [location] Specify the bucket's location. If specifying
    *     a dual-region, the `customPlacementConfig` property should be set in conjunction.
-   *     For more information, see {@link https://cloud.google.com/storage/docs/locations| Bucket Locations}.
+   *     For more information, see {@link https://cloud.google.com/storage/docs/locations | Bucket Locations}.
    * @property {boolean} [multiRegional=false] Specify the storage class as
    *     Multi-Regional.
    * @property {boolean} [nearline=false] Specify the storage class as Nearline.
@@ -884,10 +884,10 @@ export class Storage extends Service {
    *
    * Cloud Storage uses a flat namespace, so you can't create a bucket with
    * a name that is already in use. For more information, see
-   * {@link https://cloud.google.com/storage/docs/bucketnaming.html#requirements| Bucket Naming Guidelines}.
+   * {@link https://cloud.google.com/storage/docs/bucketnaming.html#requirements | Bucket Naming Guidelines}.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/insert| Buckets: insert API Documentation}
-   * See {@link https://cloud.google.com/storage/docs/storage-classes| Storage Classes}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/insert | Buckets: insert API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/storage-classes | Storage Classes}
    *
    * @param {string} name Name of the bucket to create.
    * @param {CreateBucketRequest} [metadata] Metadata to set for the bucket.
@@ -1092,7 +1092,7 @@ export class Storage extends Service {
    * Create an HMAC key associated with an service account to authenticate
    * requests to the Cloud Storage XML API.
    *
-   * See {@link https://cloud.google.com/storage/docs/authentication/hmackeys| HMAC keys documentation}
+   * See {@link https://cloud.google.com/storage/docs/authentication/hmackeys | HMAC keys documentation}
    *
    * @param {string} serviceAccountEmail The service account's email address
    *     with which the HMAC key is created for.
@@ -1203,7 +1203,7 @@ export class Storage extends Service {
   /**
    * Get Bucket objects for all of the buckets in your project.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/list| Buckets: list API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/list | Buckets: list API Documentation}
    *
    * @param {GetBucketsRequest} [query] Query object for listing buckets.
    * @param {GetBucketsCallback} [callback] Callback function.
@@ -1430,7 +1430,7 @@ export class Storage extends Service {
    * @typedef {array} GetServiceAccountResponse
    * @property {object} 0 The service account resource.
    * @property {object} 1 The full
-   * {@link https://cloud.google.com/storage/docs/json_api/v1/projects/serviceAccount#resource| API response}.
+   * {@link https://cloud.google.com/storage/docs/json_api/v1/projects/serviceAccount#resource | API response}.
    */
   /**
    * @callback GetServiceAccountCallback
@@ -1439,14 +1439,14 @@ export class Storage extends Service {
    * @param {string} serviceAccount.emailAddress The service account email
    *     address.
    * @param {object} apiResponse The full
-   * {@link https://cloud.google.com/storage/docs/json_api/v1/projects/serviceAccount#resource| API response}.
+   * {@link https://cloud.google.com/storage/docs/json_api/v1/projects/serviceAccount#resource | API response}.
    */
   /**
    * Get the email address of this project's Google Cloud Storage service
    * account.
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/projects/serviceAccount/get| Projects.serviceAccount: get API Documentation}
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/projects/serviceAccount#resource| Projects.serviceAccount Resource}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/projects/serviceAccount/get | Projects.serviceAccount: get API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/projects/serviceAccount#resource | Projects.serviceAccount Resource}
    *
    * @param {object} [options] Configuration object.
    * @param {string} [options.userProject] User project to be billed for this

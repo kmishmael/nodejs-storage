@@ -126,9 +126,9 @@ export enum IAMExceptionMessages {
 /**
  * Get and set IAM policies for your Cloud Storage bucket.
  *
- * See {@link https://cloud.google.com/storage/docs/access-control/iam#short_title_iam_management| Cloud Storage IAM Management}
- * See {@link https://cloud.google.com/iam/docs/granting-changing-revoking-access| Granting, Changing, and Revoking Access}
- * See {@link https://cloud.google.com/iam/docs/understanding-roles| IAM Roles}
+ * See {@link https://cloud.google.com/storage/docs/access-control/iam#short_title_iam_management | Cloud Storage IAM Management}
+ * See {@link https://cloud.google.com/iam/docs/granting-changing-revoking-access | Granting, Changing, and Revoking Access}
+ * See {@link https://cloud.google.com/iam/docs/understanding-roles | IAM Roles}
  *
  * @constructor Iam
  *
@@ -166,7 +166,7 @@ class Iam {
    *     interpreting and modifying policies incorrectly. The service might
    *     return a policy with version lower than the one that was requested,
    *     based on the feature syntax in the policy fetched.
-   *     See {@link https://cloud.google.com/iam/docs/policies#versions| IAM Policy versions}
+   *     See {@link https://cloud.google.com/iam/docs/policies#versions | IAM Policy versions}
    * @property {string} [userProject] The ID of the project which will be
    *     billed for the request.
    */
@@ -182,7 +182,7 @@ class Iam {
    * @property {number} [policy.version] The syntax schema version of the Policy.
    *      To set an IAM policy with conditional binding, this field must be set to
    *      3 or greater.
-   *     See {@link https://cloud.google.com/iam/docs/policies#versions| IAM Policy versions}
+   *     See {@link https://cloud.google.com/iam/docs/policies#versions | IAM Policy versions}
    */
   /**
    * @typedef {object} PolicyBinding
@@ -212,7 +212,7 @@ class Iam {
    * @param {GetPolicyCallback} [callback] Callback function.
    * @returns {Promise<GetPolicyResponse>}
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/getIamPolicy| Buckets: setIamPolicy API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/getIamPolicy | Buckets: setIamPolicy API Documentation}
    *
    * @example
    * ```
@@ -291,8 +291,8 @@ class Iam {
    * @param {SetPolicyCallback} callback Callback function.
    * @returns {Promise<SetPolicyResponse>}
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/setIamPolicy| Buckets: setIamPolicy API Documentation}
-   * See {@link https://cloud.google.com/iam/docs/understanding-roles| IAM Roles}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/setIamPolicy | Buckets: setIamPolicy API Documentation}
+   * See {@link https://cloud.google.com/iam/docs/understanding-roles | IAM Roles}
    *
    * @example
    * ```
@@ -388,7 +388,7 @@ class Iam {
    * @param {TestIamPermissionsCallback} [callback] Callback function.
    * @returns {Promise<TestIamPermissionsResponse>}
    *
-   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/testIamPermissions| Buckets: testIamPermissions API Documentation}
+   * See {@link https://cloud.google.com/storage/docs/json_api/v1/buckets/testIamPermissions | Buckets: testIamPermissions API Documentation}
    *
    * @example
    * ```

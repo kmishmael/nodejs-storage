@@ -24,7 +24,7 @@ export interface StopCallback {
 /**
  * Create a channel object to interact with a Cloud Storage channel.
  *
- * See {@link https://cloud.google.com/storage/docs/object-change-notification| Object Change Notification}
+ * See {@link https://cloud.google.com/storage/docs/object-change-notification | Object Change Notification}
  *
  * @class
  *

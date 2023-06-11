@@ -70,7 +70,7 @@ export type HmacKeyMetadataResponse = [HmacKeyMetadata, Metadata];
  * service account through the {@link Storage} client using
  * {@link Storage#createHmacKey}.
  *
- * See {@link https://cloud.google.com/storage/docs/authentication/hmackeys| HMAC keys documentation}
+ * See {@link https://cloud.google.com/storage/docs/authentication/hmackeys | HMAC keys documentation}
  *
  * @class
  */
